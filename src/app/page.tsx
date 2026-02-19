@@ -2,84 +2,80 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-[#0a0a0a] text-[#e0e0e0] selection:bg-blue-600/30">
       {/* Nav */}
-      <nav className="flex items-center justify-between px-6 py-5 max-w-6xl mx-auto">
-        <div className="text-lg font-bold tracking-tight">
-          BetterCallZaal<span className="text-blue-500"> Strategies</span>
+      <nav className="flex items-center justify-between px-6 py-6 max-w-5xl mx-auto">
+        <div className="text-sm font-mono uppercase tracking-widest text-white/50">
+          BCZ Strategies
         </div>
         <Link
           href="mailto:zaal@bettercallzaal.com"
-          className="text-sm border border-white/20 px-4 py-2 rounded hover:bg-white/10 transition"
+          className="text-xs font-mono uppercase tracking-wider text-white/40 hover:text-white transition"
         >
-          Get in Touch
+          Contact
         </Link>
       </nav>
 
       {/* Hero */}
-      <section className="max-w-4xl mx-auto px-6 pt-24 pb-20">
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
-          Infrastructure for the
-          <br />
-          <span className="text-blue-500">creator economy.</span>
-        </h1>
-        <p className="mt-6 text-lg text-white/60 max-w-2xl leading-relaxed">
-          Token design. Governance architecture. Incentive systems.
-          We help teams build durable on-chain infrastructure that aligns
-          communities and generates real value.
+      <section className="max-w-3xl mx-auto px-6 pt-32 pb-28">
+        <p className="text-sm font-mono text-white/30 mb-6 uppercase tracking-wider">
+          BetterCallZaal Strategies LLC
         </p>
-        <div className="mt-10 flex gap-4">
+        <h1 className="text-4xl md:text-5xl font-semibold leading-[1.15] tracking-tight text-white">
+          We design the systems that
+          make creator economies work.
+        </h1>
+        <p className="mt-8 text-base text-white/45 max-w-xl leading-relaxed">
+          Token architecture. Governance design. Incentive mechanics.
+          For teams building on-chain infrastructure where participation
+          needs to mean something.
+        </p>
+        <div className="mt-12">
           <Link
             href="mailto:zaal@bettercallzaal.com"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-medium transition"
+            className="text-sm font-mono border-b border-blue-500 text-blue-400 hover:text-blue-300 pb-0.5 transition"
           >
-            Book a Strategy Call
-          </Link>
-          <Link
-            href="#services"
-            className="border border-white/20 px-6 py-3 rounded font-medium hover:bg-white/10 transition"
-          >
-            See Services
+            zaal@bettercallzaal.com →
           </Link>
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="border-t border-white/[0.06]" />
+      </div>
+
       {/* Services */}
-      <section id="services" className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold mb-12">What We Build</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+      <section id="services" className="max-w-5xl mx-auto px-6 py-24">
+        <p className="text-xs font-mono text-white/25 uppercase tracking-wider mb-16">
+          Engagements
+        </p>
+        <div className="space-y-16">
           {[
             {
-              title: "Token Design",
-              desc: "Economic models that drive participation, align incentives, and sustain ecosystems beyond launch.",
+              title: "Token Design & Economics",
+              desc: "Supply structures, distribution mechanics, and incentive alignment that survive past launch. Not tokenomics decks — working economic systems.",
             },
             {
               title: "Governance Architecture",
-              desc: "Decision-making frameworks, contributor structures, and DAO tooling — tested across 70+ weeks of live governance.",
+              desc: "Contributor frameworks, decision protocols, and coordination tooling. Informed by 70+ weeks of running live decentralized governance.",
             },
             {
-              title: "Incentive Systems",
-              desc: "Reward mechanics, signal coordination, and participation engines that convert community activity into measurable value.",
+              title: "Incentive & Signal Systems",
+              desc: "Participation engines that surface real signal from community noise. Leaderboards, reward mechanics, and coordination layers that compound.",
             },
             {
-              title: "On-Chain Music Strategy",
-              desc: "Infrastructure for artists: royalty systems, competitive formats, and programmable entertainment economics.",
+              title: "On-Chain Music Infrastructure",
+              desc: "Royalty systems, competitive formats, artist revenue models. Programmable entertainment economics built for independents.",
             },
             {
-              title: "Community Activation",
-              desc: "IRL + URL event strategy, cultural bridging, and engagement systems that compound over time.",
-            },
-            {
-              title: "Ecosystem Coordination",
-              desc: "Multi-stakeholder alignment across protocols, platforms, and communities. Systems, not noise.",
+              title: "Community & Event Strategy",
+              desc: "IRL activations, cultural bridging, multi-stakeholder coordination. Two side events produced (NFT NYC, Art Basel Miami). Not vibes — systems.",
             },
           ].map((service) => (
-            <div
-              key={service.title}
-              className="border border-white/10 rounded-lg p-6 hover:border-blue-500/40 transition"
-            >
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-white/50 text-sm leading-relaxed">
+            <div key={service.title} className="grid md:grid-cols-[200px_1fr] gap-4">
+              <h3 className="text-sm font-mono text-white/60">{service.title}</h3>
+              <p className="text-white/35 text-sm leading-relaxed max-w-lg">
                 {service.desc}
               </p>
             </div>
@@ -87,49 +83,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Track Record */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold mb-12">Track Record</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {/* Divider */}
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="border-t border-white/[0.06]" />
+      </div>
+
+      {/* About / Credibility */}
+      <section className="max-w-3xl mx-auto px-6 py-24">
+        <p className="text-xs font-mono text-white/25 uppercase tracking-wider mb-10">
+          Background
+        </p>
+        <p className="text-white/40 text-sm leading-relaxed max-w-lg">
+          Built by Zaal Panthaki. Engineer. Founder of The ZAO.
+          Cofounder of WaveWarZ. Architect of ZABAL. Years spent
+          at the intersection of music, governance, token design,
+          and community coordination — building infrastructure
+          that independents actually own.
+        </p>
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6">
           {[
-            { stat: "70+", label: "Weeks of live governance" },
-            { stat: "100+", label: "Artists collaborated with" },
-            { stat: "50+", label: "Communities coordinated" },
-            { stat: "2", label: "IRL side events produced" },
-          ].map((item) => (
-            <div key={item.label}>
-              <div className="text-4xl font-bold text-blue-500">
-                {item.stat}
-              </div>
-              <div className="text-sm text-white/50 mt-1">{item.label}</div>
+            { val: "70+", label: "weeks live governance" },
+            { val: "100+", label: "artist collaborations" },
+            { val: "50+", label: "communities coordinated" },
+            { val: "2", label: "IRL events produced" },
+          ].map((s) => (
+            <div key={s.label}>
+              <div className="text-2xl font-semibold text-white/80">{s.val}</div>
+              <div className="text-xs text-white/25 mt-1">{s.label}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to build infrastructure that lasts?</h2>
-        <p className="text-white/50 mb-8">
-          We work with a small number of high-impact clients. Let&apos;s talk about what you&apos;re building.
-        </p>
-        <Link
-          href="mailto:zaal@bettercallzaal.com"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-medium transition inline-block"
-        >
-          Start a Conversation
-        </Link>
-      </section>
-
       {/* Footer */}
-      <footer className="border-t border-white/10 py-8 mt-10">
-        <div className="max-w-6xl mx-auto px-6 flex justify-between items-center text-sm text-white/40">
-          <div>© 2026 BetterCallZaal Strategies LLC</div>
-          <div className="flex gap-6">
-            <Link href="https://twitter.com/BetterCallZaal" target="_blank" className="hover:text-white/70 transition">
-              Twitter
-            </Link>
+      <footer className="border-t border-white/[0.06] py-8 mt-8">
+        <div className="max-w-5xl mx-auto px-6 flex justify-between items-center">
+          <div className="text-xs text-white/20 font-mono">
+            © 2026 BetterCallZaal Strategies LLC
           </div>
+          <Link
+            href="https://twitter.com/BetterCallZaal"
+            target="_blank"
+            className="text-xs text-white/20 hover:text-white/40 transition font-mono"
+          >
+            @BetterCallZaal
+          </Link>
         </div>
       </footer>
     </div>
