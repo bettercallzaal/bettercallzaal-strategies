@@ -8,12 +8,11 @@ export default function Home() {
         <div className="text-sm font-mono uppercase tracking-widest text-white/50">
           BCZ Strategies
         </div>
-        <Link
-          href="mailto:zaal@bettercallzaal.com"
-          className="text-xs font-mono uppercase tracking-wider text-white/40 hover:text-white transition"
-        >
-          Contact
-        </Link>
+        <div className="flex gap-6 text-xs font-mono uppercase tracking-wider text-white/40">
+          <Link href="/about" className="hover:text-white transition">About</Link>
+          <Link href="/research" className="hover:text-white transition">Research</Link>
+          <Link href="mailto:zaal@bettercallzaal.com" className="hover:text-white transition">Contact</Link>
+        </div>
       </nav>
 
       {/* Hero */}
@@ -22,20 +21,26 @@ export default function Home() {
           BetterCallZaal Strategies LLC
         </p>
         <h1 className="text-4xl md:text-5xl font-semibold leading-[1.15] tracking-tight text-white">
-          We design the systems that
-          make creator economies work.
+          Signal. Structure.<br/>
+          <span className="text-white/40">Support.</span>
         </h1>
         <p className="mt-8 text-base text-white/45 max-w-xl leading-relaxed">
-          Token architecture. Governance design. Incentive mechanics.
-          For teams building on-chain infrastructure where participation
-          needs to mean something.
+          We help teams build durable on-chain infrastructure where participation
+          actually means something. Token design. Governance architecture. 
+          Incentive mechanics.
         </p>
-        <div className="mt-12">
+        <div className="mt-12 flex gap-6 text-sm font-mono">
           <Link
             href="mailto:zaal@bettercallzaal.com"
-            className="text-sm font-mono border-b border-blue-500 text-blue-400 hover:text-blue-300 pb-0.5 transition"
+            className="border-b border-blue-500 text-blue-400 hover:text-blue-300 pb-0.5 transition"
           >
-            zaal@bettercallzaal.com →
+            Start a Project →
+          </Link>
+          <Link
+            href="/research"
+            className="border-b border-white/20 text-white/40 hover:text-white pb-0.5 transition"
+          >
+            Read the Research
           </Link>
         </div>
       </section>
@@ -45,73 +50,49 @@ export default function Home() {
         <div className="border-t border-white/[0.06]" />
       </div>
 
-      {/* Services */}
-      <section id="services" className="max-w-5xl mx-auto px-6 py-24">
-        <p className="text-xs font-mono text-white/25 uppercase tracking-wider mb-16">
-          Engagements
-        </p>
-        <div className="space-y-16">
-          {[
-            {
-              title: "Token Design & Economics",
-              desc: "Supply structures, distribution mechanics, and incentive alignment that survive past launch. Not tokenomics decks — working economic systems.",
-            },
-            {
-              title: "Governance Architecture",
-              desc: "Contributor frameworks, decision protocols, and coordination tooling. Informed by 70+ weeks of running live decentralized governance.",
-            },
-            {
-              title: "Incentive & Signal Systems",
-              desc: "Participation engines that surface real signal from community noise. Leaderboards, reward mechanics, and coordination layers that compound.",
-            },
-            {
-              title: "On-Chain Music Infrastructure",
-              desc: "Royalty systems, competitive formats, artist revenue models. Programmable entertainment economics built for independents.",
-            },
-            {
-              title: "Community & Event Strategy",
-              desc: "IRL activations, cultural bridging, multi-stakeholder coordination. Two side events produced (NFT NYC, Art Basel Miami). Not vibes — systems.",
-            },
-          ].map((service) => (
-            <div key={service.title} className="grid md:grid-cols-[200px_1fr] gap-4">
-              <h3 className="text-sm font-mono text-white/60">{service.title}</h3>
-              <p className="text-white/35 text-sm leading-relaxed max-w-lg">
-                {service.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* The Three Pillars */}
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <div className="grid md:grid-cols-3 gap-12">
+          
+          {/* Pillar 1: Strategy */}
+          <div>
+            <h3 className="text-sm font-mono uppercase tracking-widest text-white/60 mb-4">01. Strategy</h3>
+            <p className="text-white/40 text-sm leading-relaxed mb-6">
+              Economic modeling and governance design for protocols that need to survive past launch.
+            </p>
+            <ul className="space-y-2 text-xs font-mono text-white/30">
+              <li>• Token Design</li>
+              <li>• Governance Architecture</li>
+              <li>• Incentive Systems</li>
+            </ul>
+          </div>
 
-      {/* Divider */}
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-white/[0.06]" />
-      </div>
+          {/* Pillar 2: Ventures */}
+          <div>
+            <h3 className="text-sm font-mono uppercase tracking-widest text-white/60 mb-4">02. Ventures</h3>
+            <p className="text-white/40 text-sm leading-relaxed mb-6">
+              Incubating internal primitives to test our theories on signal and coordination.
+            </p>
+            <ul className="space-y-2 text-xs font-mono text-white/30">
+              <li>• WaveWarZ (Prediction)</li>
+              <li>• ZABAL (Signal)</li>
+              <li>• The ZAO (Community)</li>
+            </ul>
+          </div>
 
-      {/* About / Credibility */}
-      <section className="max-w-3xl mx-auto px-6 py-24">
-        <p className="text-xs font-mono text-white/25 uppercase tracking-wider mb-10">
-          Background
-        </p>
-        <p className="text-white/40 text-sm leading-relaxed max-w-lg">
-          Built by Zaal Panthaki. Engineer. Founder of The ZAO.
-          Cofounder of WaveWarZ. Architect of ZABAL. Years spent
-          at the intersection of music, governance, token design,
-          and community coordination — building infrastructure
-          that independents actually own.
-        </p>
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6">
-          {[
-            { val: "70+", label: "weeks live governance" },
-            { val: "100+", label: "artist collaborations" },
-            { val: "50+", label: "communities coordinated" },
-            { val: "2", label: "IRL events produced" },
-          ].map((s) => (
-            <div key={s.label}>
-              <div className="text-2xl font-semibold text-white/80">{s.val}</div>
-              <div className="text-xs text-white/25 mt-1">{s.label}</div>
-            </div>
-          ))}
+          {/* Pillar 3: Research */}
+          <div>
+            <h3 className="text-sm font-mono uppercase tracking-widest text-white/60 mb-4">03. Research</h3>
+            <p className="text-white/40 text-sm leading-relaxed mb-6">
+              Open-source audits, viral loop analysis, and ecosystem deep dives.
+            </p>
+            <ul className="space-y-2 text-xs font-mono text-white/30">
+              <li>• Ecosystem Audits</li>
+              <li>• Viral Mechanics</li>
+              <li>• Infrastructure Maps</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
@@ -121,13 +102,22 @@ export default function Home() {
           <div className="text-xs text-white/20 font-mono">
             © 2026 BetterCallZaal Strategies LLC
           </div>
-          <Link
-            href="https://twitter.com/BetterCallZaal"
-            target="_blank"
-            className="text-xs text-white/20 hover:text-white/40 transition font-mono"
-          >
-            @BetterCallZaal
-          </Link>
+          <div className="flex gap-6">
+            <Link
+              href="https://twitter.com/BetterCallZaal"
+              target="_blank"
+              className="text-xs text-white/20 hover:text-white/40 transition font-mono"
+            >
+              Twitter
+            </Link>
+            <Link
+              href="https://github.com/bettercallzaal"
+              target="_blank"
+              className="text-xs text-white/20 hover:text-white/40 transition font-mono"
+            >
+              GitHub
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
