@@ -25,6 +25,18 @@ export const metadata: Metadata = {
     url: "https://bettercallzaal-strategies.vercel.app",
     siteName: "BetterCallZaal Strategies",
     locale: "en_US",
+    images: [
+      {
+        url: "https://bettercallzaal-strategies.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+      }
+    ],
+  },
+  other: {
+    "fc:frame": "vNext",
+    "fc:frame:image": "https://bettercallzaal-strategies.vercel.app/og-image.png",
+    "fc:frame:post_url": "https://bettercallzaal-strategies.vercel.app/api/frame",
   },
   twitter: {
     card: "summary_large_image",
