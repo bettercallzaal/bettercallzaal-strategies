@@ -1,18 +1,39 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#0a0a0a",
+};
+
 export const metadata: Metadata = {
-  title: "BetterCallZaal Strategies | Infrastructure for the Creator Economy",
+  title: "BetterCallZaal Strategies | Ecosystem Architect",
   description:
-    "Token design, governance architecture, and incentive systems for on-chain music and creator platforms. Built by Zaal Panthaki.",
+    "Infrastructure for the creator economy. Token design. Governance. Signal. Built by Zaal Panthaki.",
+  keywords: ["Zaal", "BetterCallZaal", "Web3", "Governance", "Token Design", "ZAO", "ZABAL"],
+  authors: [{ name: "Zaal Panthaki" }],
   openGraph: {
     title: "BetterCallZaal Strategies",
-    description:
-      "Infrastructure for the creator economy. Token design. Governance. Incentive systems.",
+    description: "Ecosystem Architect. Building infrastructure for the creator economy.",
     type: "website",
+    url: "https://bettercallzaal-strategies.vercel.app",
+    siteName: "BetterCallZaal Strategies",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BetterCallZaal Strategies",
+    description: "Ecosystem Architect. Building infrastructure for the creator economy.",
+    creator: "@BetterCallZaal",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

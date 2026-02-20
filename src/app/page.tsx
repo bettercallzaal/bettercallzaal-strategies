@@ -4,24 +4,24 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-[#e0e0e0] selection:bg-blue-600/30">
       {/* Nav */}
-      <nav className="flex items-center justify-between px-6 py-6 max-w-5xl mx-auto">
+      <nav className="flex items-center justify-between px-4 py-4 md:px-6 md:py-6 max-w-5xl mx-auto">
         <div className="text-sm font-mono uppercase tracking-widest text-white/50">
-          BCZ Strategies
+          BCZ
         </div>
-        <div className="flex gap-6 text-xs font-mono uppercase tracking-wider text-white/40">
+        <div className="flex gap-3 md:gap-6 text-xs font-mono uppercase tracking-wider text-white/40">
           <Link href="/about" className="hover:text-white transition">About</Link>
-          <Link href="/research" className="hover:text-white transition">Research</Link>
-          <Link href="/yapz" className="hover:text-white transition">Yapz</Link>
+          <Link href="/research" className="hidden md:inline hover:text-white transition">Research</Link>
+          <Link href="/yapz" className="hidden md:inline hover:text-white transition">Yapz</Link>
           <Link href="mailto:zaal@bettercallzaal.com" className="hover:text-white transition">Contact</Link>
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="max-w-3xl mx-auto px-6 pt-32 pb-28">
-        <p className="text-sm font-mono text-white/30 mb-6 uppercase tracking-wider">
+      <section className="max-w-3xl mx-auto px-4 md:px-6 pt-24 md:pt-32 pb-16 md:pb-28">
+        <p className="text-sm font-mono text-white/30 mb-4 md:mb-6 uppercase tracking-wider">
           BetterCallZaal Strategies LLC
         </p>
-        <h1 className="text-4xl md:text-5xl font-semibold leading-[1.15] tracking-tight text-white">
+        <h1 className="text-3xl md:text-5xl font-semibold leading-[1.15] tracking-tight text-white">
           Signal. Structure.<br/>
           <span className="text-white/40">Support.</span>
         </h1>
@@ -52,8 +52,8 @@ export default function Home() {
       </div>
 
       {/* The Three Pillars */}
-      <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="grid md:grid-cols-3 gap-12">
+      <section className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-24">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           
           {/* Pillar 1: Strategy */}
           <div>
