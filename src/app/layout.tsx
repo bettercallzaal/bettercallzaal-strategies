@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import MiniappProvider from "@/components/MiniappProvider";
+import MiniappActions from "@/components/MiniappActions";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,6 +65,7 @@ export default function RootLayout({
         <MiniappProvider>
           {children}
         </MiniappProvider>
+        <MiniappActions />
       </body>
     </html>
   );

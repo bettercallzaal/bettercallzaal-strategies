@@ -2,21 +2,14 @@
 
 import { useEffect, useState } from "react";
 
-declare global {
-  interface Window {
-    forge?: {
-      ready: Promise<void>;
-      identity: any;
-    };
-  }
-}
-
 export default function MiniappProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
+    // @ts-ignore
     if (window.forge) {
-      window.forge.ready.then(() => {
+      // @ts-ignore
+      window.forge.ready?.then(() => {
         setReady(true);
       }).catch(() => {
         setReady(true);
