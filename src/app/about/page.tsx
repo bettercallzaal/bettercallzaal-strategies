@@ -19,6 +19,19 @@ export default function About() {
         <p className="text-lg text-white/50 font-mono mb-12">Manifestation Engineer. Vibe Coder. Builder.</p>
 
         <section className="mb-16">
+          <h2 className="text-sm font-mono uppercase tracking-widest text-blue-500 mb-6">The Origin</h2>
+          <p className="text-lg leading-relaxed text-white/80">
+            I'm an engineer who got tired of watching artists get squeezed by middlemen. 
+            Instead of building another "platform," I started building <span className="text-white">systems that belong to the artists</span>.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-white/50">
+            I don't hype. I build. Quietly. Consistently. 70+ weeks of governance calls, 
+            hundreds of Spaces, two real-world events. The work speaks. 
+            I'm just getting started.
+          </p>
+        </section>
+
+        <section className="mb-16">
           <h2 className="text-sm font-mono uppercase tracking-widest text-blue-500 mb-6">The Mission</h2>
           <p className="text-xl leading-relaxed text-white/80">
             I build infrastructure that brings <span className="text-white">100% of the profit margin</span>, IP, and data rights back to independent artists. 
