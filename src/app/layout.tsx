@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MiniappProvider from "@/components/MiniappProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +45,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <head>
+        <script async src="https://cdn.jsdelivr.net/npm/@farcaster/mini-app-sdk@0.2.3/dist/sdk.js" />
+      </head>
+      <body className={`${inter.className} antialiased`}>
+        <MiniappProvider>
+          {children}
+        </MiniappProvider>
+      </body>
     </html>
   );
 }
