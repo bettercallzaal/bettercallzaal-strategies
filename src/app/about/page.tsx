@@ -7,6 +7,11 @@ export default function About() {
         <div className="text-sm font-mono uppercase tracking-widest text-white/50">
           <Link href="/" className="hover:text-white transition">BCZ Strategies</Link>
         </div>
+        <div className="flex gap-6 text-xs font-mono uppercase tracking-wider text-white/40">
+          <Link href="/research" className="hover:text-white transition">Research</Link>
+          <Link href="/yapz" className="hover:text-white transition">Yapz</Link>
+          <Link href="mailto:zaal@bettercallzaal.com" className="hover:text-white transition">Contact</Link>
+        </div>
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-20">
@@ -65,6 +70,49 @@ export default function About() {
                 <span className="border border-white/10 px-2 py-1 rounded">Identity</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        <div className="border-t border-white/[0.06] my-12" />
+
+        <section className="mb-16">
+          <h2 className="text-sm font-mono uppercase tracking-widest text-white/30 mb-6">The Primitives</h2>
+          <p className="text-white/40 text-sm mb-6">Open-source tools we've built to teach the community how to build.</p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <a href="https://github.com/bettercallzaal/fractalbotfeb2026" target="_blank" className="block bg-white/5 border border-white/10 p-4 rounded hover:bg-white/10 hover:border-blue-500/30 transition">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-white font-bold">Fractal Bot</span>
+                <span className="text-xs font-mono text-white/30">→ GitHub</span>
+              </div>
+              <p className="text-xs text-white/40">Automated voting & consensus for governance. Fork this to run your own DAO.</p>
+            </a>
+            <a href="https://github.com/bettercallzaal/ZOUNZ" target="_blank" className="block bg-white/5 border border-white/10 p-4 rounded hover:bg-white/10 hover:border-blue-500/30 transition">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-white font-bold">ZOUNZ</span>
+                <span className="text-xs font-mono text-white/30">→ GitHub</span>
+              </div>
+              <p className="text-xs text-white/40">Farcaster-native music market. A "mini-app" for prediction markets.</p>
+            </a>
+          </div>
+        </section>
+
+        <div className="border-t border-white/[0.06] my-12" />
+
+        <section className="mb-16">
+          <h2 className="text-sm font-mono uppercase tracking-widest text-white/30 mb-6">The Ecosystem</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            <a href="https://nexus.thezao.com" target="_blank" className="block bg-white/5 border border-white/10 p-4 rounded hover:bg-white/10 transition text-center">
+              <span className="text-white font-bold">Nexus</span>
+              <p className="text-xs text-white/40 mt-1">The ZAO Hub</p>
+            </a>
+            <a href="https://zabal.art/gallery" target="_blank" className="block bg-white/5 border border-white/10 p-4 rounded hover:bg-white/10 transition text-center">
+              <span className="text-white font-bold">ZABAL</span>
+              <p className="text-xs text-white/40 mt-1">Art Gallery</p>
+            </a>
+            <a href="https://github.com/bettercallzaal" target="_blank" className="block bg-white/5 border border-white/10 p-4 rounded hover:bg-white/10 transition text-center">
+              <span className="text-white font-bold">GitHub</span>
+              <p className="text-xs text-white/40 mt-1">All Repos</p>
+            </a>
           </div>
         </section>
 

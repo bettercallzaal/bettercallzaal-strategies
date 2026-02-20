@@ -11,6 +11,7 @@ export default function Home() {
         <div className="flex gap-6 text-xs font-mono uppercase tracking-wider text-white/40">
           <Link href="/about" className="hover:text-white transition">About</Link>
           <Link href="/research" className="hover:text-white transition">Research</Link>
+          <Link href="/yapz" className="hover:text-white transition">Yapz</Link>
           <Link href="mailto:zaal@bettercallzaal.com" className="hover:text-white transition">Contact</Link>
         </div>
       </nav>
