@@ -28,7 +28,7 @@ export default function MiniappActions() {
   };
 
   const handleBook = () => {
-    window.location.href = "mailto:zaal@bettercallzaal.com?subject=Booking%20Consultation";
+    window.location.href = "mailto:zaal@thezao.com?subject=Booking%20Consultation";
   };
 
   const handleTip = () => {

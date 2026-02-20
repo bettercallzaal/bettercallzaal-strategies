@@ -12,7 +12,7 @@ export default function Home() {
           <Link href="/about" className="hover:text-white transition">About</Link>
           <Link href="/research" className="hidden md:inline hover:text-white transition">Research</Link>
           <Link href="/yapz" className="hidden md:inline hover:text-white transition">Yapz</Link>
-          <Link href="mailto:zaal@bettercallzaal.com" className="hover:text-white transition">Contact</Link>
+          <Link href="mailto:zaal@thezao.com" className="hover:text-white transition">Contact</Link>
         </div>
       </nav>
 
@@ -32,7 +32,7 @@ export default function Home() {
         </p>
         <div className="mt-12 flex gap-6 text-sm font-mono">
           <Link
-            href="mailto:zaal@bettercallzaal.com"
+            href="mailto:zaal@thezao.com"
             className="border-b border-blue-500 text-blue-400 hover:text-blue-300 pb-0.5 transition"
           >
             Start a Project →
