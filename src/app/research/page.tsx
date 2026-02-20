@@ -29,11 +29,11 @@ export default function Research() {
                 <li>• Context: Paired with SANG (SongJam)</li>
               </ul>
               <p className="leading-relaxed text-white/80 mb-4">
-                **The Alpha:** "Molt Spaces" (Virtuals Protocol Skill) is the key acceleration vector. 
+                **The Alpha:** &quot;Molt Spaces&quot; (Virtuals Protocol Skill) is the key acceleration vector. 
                 It upgrades Voice SBTs based on X Spaces participation. 
                 <br/><br/>
-                **Strategy:** We don't need to "revive" ZABAL; we need to bind it to the "Daily 10" (Yapz).
-                Share the content -> Earn the signal -> Molt the identity.
+                **Strategy:** We don&apos;t need to &quot;revive&quot; ZABAL; we need to bind it to the &quot;Daily 10&quot; (Yapz).
+                Share the content -&gt; Earn the signal -&gt; Molt the identity.
               </p>
             </div>
           </section>
