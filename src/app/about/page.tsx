@@ -9,6 +9,7 @@ export default function About() {
         </div>
         <div className="flex gap-6 text-xs font-mono uppercase tracking-wider text-white/40">
           <Link href="/research" className="hover:text-white transition">Research</Link>
+          <Link href="/hub" className="hover:text-white transition">Hub</Link>
           <Link href="/yapz" className="hover:text-white transition">Yapz</Link>
           <Link href="mailto:zaal@thezao.com" className="hover:text-white transition">Contact</Link>
         </div>
